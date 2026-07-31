@@ -18,15 +18,15 @@ export const Logo: React.FC<LogoProps> = ({
   variant = "light",
 }) => {
   const logoSizes = {
-    sm: { width: 44, height: 44 },
-    md: { width: 60, height: 60 },
-    lg: { width: 80, height: 80 },
+    sm: { width: 56, height: 56 },
+    md: { width: 72, height: 72 },
+    lg: { width: 96, height: 96 },
   };
 
   const subtextSizes = {
-    sm: "text-[8px]",
-    md: "text-[9.5px]",
-    lg: "text-[11px]",
+    sm: "text-xs sm:text-[13px] md:text-[14px]",
+    md: "text-sm sm:text-base",
+    lg: "text-base sm:text-xl",
   };
 
   const isDark = variant === "dark";
@@ -40,7 +40,7 @@ export const Logo: React.FC<LogoProps> = ({
         style={{ width, height }}
       >
         <Image
-          src="/images/hansindo_logo.png"
+          src="/logo.svg"
           alt="Hansindo Logistik Logo"
           width={width}
           height={height}
@@ -49,12 +49,18 @@ export const Logo: React.FC<LogoProps> = ({
         />
       </div>
 
-      {/* Subtext below logo (optional) */}
+      {/* Subtext beside logo */}
       {showSubtext && (
         <span
-          className={`${subtextSizes[size]} font-bold tracking-wider uppercase ${
-            isDark ? "text-slate-300" : "text-slate-700"
-          }`}
+          className={`
+            ${subtextSizes[size]}
+            font-extrabold
+            tracking-wider
+            uppercase
+            leading-tight
+            whitespace-nowrap
+            ${isDark ? "text-white drop-shadow-sm" : "text-slate-900"}
+          `}
         >
           PT. HANSINDO BERKAT JAYA LOGISTIK
         </span>

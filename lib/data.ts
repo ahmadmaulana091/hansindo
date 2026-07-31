@@ -8,49 +8,45 @@ export const COMPANY_INFO = {
   descriptionParagraph2: "We are consistent in providing transportation and cargo delivery services across domestic areas, supported by a professional and experienced team, particularly in handling Export and Import cargo.",
   established: "2019",
   headquarters: "Kencana Tower, Mezzanine Floor No. 88, West Jakarta, Indonesia",
-  phone: "+62 21 5890 8888",
-  email: "info@hansindologistik.co.id",
+  phone: "+62 21 *** ****",
+  whatsappNumber: "+62 812 **** ****",
+  whatsappUrl: "https://wa.me/62812********?text=Hello%20PT.%20Hansindo%20Berkat%20Jaya%20Logistik,%20I%20would%20like%20to%20consult%20about%20logistics%20services",
+  email: "info@hansindologistik.com",
   address: "Kencana Tower, Mezzanine Floor No. 88, West Jakarta, Indonesia",
-  stats: [
-    { label: "Domestic Coverage", value: 100, suffix: "%" },
-    { label: "Shipments Delivered", value: 5000, suffix: "+" },
-    { label: "Experienced Team", value: 150, suffix: "+" },
-    { label: "Domestic & Int'l Ports", value: 45, suffix: "+" },
-  ],
+
 };
 
 export const SERVICES_DATA: ServiceItem[] = [
   {
     id: "project-cargo",
     title: "Project Cargo",
-    shortDesc: "Layanan pengiriman kargo proyek skala besar dengan perencanaan rute khusus dan penanganan profesional untuk muatan non-standar.",
-    fullDesc: "Hansindo Logistik menyediakan layanan Project Cargo yang mencakup perencanaan pengiriman end-to-end untuk muatan oversize, oversized, dan high-value. Kami mengelola seluruh aspek mulai dari survei rute, perizinan, pengiriman darat, hingga koordinasi di pelabuhan untuk memastikan muatan tiba dengan aman dan tepat waktu.",
+    shortDesc: "Large-scale project cargo delivery with specialized route planning and professional handling for non-standard loads.",
+    fullDesc: "Expert Project Cargo Solutions: Seamless, secure, and reliable transportation of heavy steel products (slabs, blooms, and billets) and critical industrial spare parts across complex supply chains.",
     iconName: "Truck",
     features: [
-      "Pengiriman kargo proyek skala besar",
-      "Perencanaan rute & survei jalur khusus",
-      "Penanganan muatan oversize & oversized",
-      "Koordinasi pelabuhan & customs clearance",
-      "Pengiriman domestik & internasional",
+      "Large-scale project cargo shipments",
+      "Custom route planning & survey",
+      "Oversized & overweight cargo handling",
+      "Port coordination & customs clearance",
+      "Domestic & international delivery",
     ],
-    image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80&w=1200",
+    image: "/images/truk_project_cargo.png",
   },
   {
     id: "heavy-lift-load",
     title: "Heavy Lift Load",
-    shortDesc: "Solusi angkutan muatan berat dengan armada truk dan alat berat berkapasitas tinggi untuk berbagai jenis kargo industri.",
-    fullDesc: "Divisi Heavy Lift Load Hansindo Logistik mengkhususkan diri dalam pengangkutan muatan berat yang membutuhkan penanganan teknis khusus. Dengan armada kendaraan heavy-duty dan tim berpengalaman, kami siap mengangkut peralatan industri, mesin pabrik, modul konstruksi, dan kargo berat lainnya di seluruh Indonesia.",
+    shortDesc: "Heavy cargo transport solutions with high-capacity truck fleets and specialized equipment for industrial cargo.",
+    fullDesc: "Expert Container Logistics Solutions: Delivering reliable, safe, and time-critical container transportation, drayage, and depot management services tailored to support seamless industrial logistics.",
     iconName: "Container",
     features: [
-      "Angkutan muatan berat (heavy cargo)",
-      "Armada truk heavy-duty berkapasitas tinggi",
-      "Penanganan peralatan & mesin industri",
-      "Pengiriman modul konstruksi & pabrik",
-      "Layanan pengiriman ekspor & impor",
+      "Heavy cargo transport",
+      "High-capacity heavy-duty truck fleet",
+      "Industrial equipment & machinery handling",
+      "Construction & factory module delivery",
+      "Export & import shipment services",
     ],
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1200",
+    image: "/images/truk_heavy_lift_load.png",
   },
-
 ];
 
 export const PROJECTS_DATA: ProjectItem[] = [
