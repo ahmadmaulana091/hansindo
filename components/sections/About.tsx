@@ -121,7 +121,7 @@ export const About = () => {
               {/* Main photo */}
               <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
                 <Image
-                  src="/images/truk_hansindo.png"
+                  src="/images/truk_putih_lift_load.png"
                   alt="Armada Truk Hansindo Logistik"
                   fill
                   className="object-cover"
