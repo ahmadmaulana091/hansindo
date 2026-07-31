@@ -30,7 +30,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Port coordination & customs clearance",
       "Domestic & international delivery",
     ],
-    image: "/images/truk_putih_loading_cargo.png",
+    image: "/images/truk_putih_loading_warehouse.png",
   },
   {
     id: "project-container",
@@ -45,7 +45,7 @@ export const SERVICES_DATA: ServiceItem[] = [
       "Construction & factory module delivery",
       "Export & import shipment services",
     ],
-    image: "/images/truk_putih_loading_warehouse.png",
+    image: "/images/truk_putih_loading_cargo.png",
   },
 ];
 
