@@ -168,7 +168,7 @@ export const About = () => {
                   src="/images/truk_putih_loading_warehouse.png"
                   alt="Hansindo Operations - Loading & Cargo Handling"
                   fill
-                  className="object-cover"
+                  className="object-cover object-[center_60%]"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
