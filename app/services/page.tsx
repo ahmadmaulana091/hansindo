@@ -19,7 +19,7 @@ export default function ServicesPage() {
         {/* Background photo */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/truk_putih_loading_cargo.png"
+            src="/images/content/truk_putih_loading_cargo.png"
             alt="Hansindo Logistik Services"
             fill
             priority

@@ -7,11 +7,11 @@ import { X, Search } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 
 const CUSTOMERS = [
-  { id: "c1", name: "Customer 1", logo: "/images/cust_dummy_1.png" },
-  { id: "c2", name: "Customer 2", logo: "/images/cust_dummy_2.png" },
-  { id: "c3", name: "Customer 3", logo: "/images/cust_dummy_3.png" },
-  { id: "c4", name: "Customer 4", logo: "/images/cust_dummy_4.png" },
-  { id: "c5", name: "Customer 5", logo: "/images/cust_dummy_5.png" },
+  { id: "c1", name: "Customer 1", logo: "/images/customer/cust_dummy_1.png" },
+  { id: "c2", name: "Customer 2", logo: "/images/customer/cust_dummy_2.png" },
+  { id: "c3", name: "Customer 3", logo: "/images/customer/cust_dummy_3.png" },
+  { id: "c4", name: "Customer 4", logo: "/images/customer/cust_dummy_4.png" },
+  { id: "c5", name: "Customer 5", logo: "/images/customer/cust_dummy_5.png" },
 ];
 
 export const Clients = () => {
@@ -101,6 +101,7 @@ export const Clients = () => {
                   fill
                   className="object-contain"
                   priority
+                  sizes="(max-width: 640px) 288px, 320px"
                 />
               </div>
             </motion.div>

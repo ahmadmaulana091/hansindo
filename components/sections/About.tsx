@@ -121,7 +121,7 @@ export const About = () => {
               {/* Main photo */}
               <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
                 <Image
-                  src="/images/truk_putih_lift_load.png"
+                  src="/images/content/truk_putih_lift_load.png"
                   alt="Armada Truk Hansindo Logistik"
                   fill
                   className="object-cover"
@@ -165,7 +165,7 @@ export const About = () => {
               {/* Fleet photo */}
               <div className="relative rounded-2xl overflow-hidden aspect-video shadow-lg">
                 <Image
-                  src="/images/truk_putih_loading_warehouse.png"
+                  src="/images/content/truk_putih_loading_warehouse.png"
                   alt="Hansindo Operations - Loading & Cargo Handling"
                   fill
                   className="object-cover object-[center_60%]"

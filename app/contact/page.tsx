@@ -17,7 +17,7 @@ export default function ContactPage() {
       <div className="relative bg-[#0B4DA2] text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/truk_putih_loading_cargo.png"
+            src="/images/content/truk_putih_loading_cargo.png"
             alt="Hansindo Logistik Contact"
             fill
             priority

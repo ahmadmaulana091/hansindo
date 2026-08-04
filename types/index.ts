@@ -1,11 +1,21 @@
+export interface ServiceGalleryItem {
+  src: string;
+  alt: string;
+  caption: string;
+  position?: string;
+}
+
 export interface ServiceItem {
   id: string;
   title: string;
+  tagline?: string;
+  badge?: string;
   shortDesc: string;
   fullDesc: string;
   iconName: string;
   features: string[];
   image: string;
+  gallery: ServiceGalleryItem[];
 }
 
 export interface ProjectItem {

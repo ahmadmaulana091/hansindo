@@ -14,10 +14,11 @@ export const Hero = () => {
       {/* Background Container Truck Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/truk_putih_loading_cargo.png"
+          src="/images/content/truk_putih_loading_cargo.png"
           alt="Hansindo Logistics Container Truck"
           fill
           priority
+          sizes="100vw"
           className="object-cover object-right lg:object-center opacity-70 scale-105 transform hover:scale-100 transition-transform duration-10000"
         />
         {/* Soft Multi-layer Gradient Overlays to keep text readable while keeping truck dominant */}
