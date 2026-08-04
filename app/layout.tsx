@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: COMPANY_INFO.name,
     images: [
       {
-        url: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&q=80&w=1200",
+        url: "public/image/content/truk_putih_lift_load.png",
         width: 1200,
         height: 630,
         alt: "Hansindo Maritime Logistics Fleet",
