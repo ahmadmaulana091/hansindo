@@ -7,11 +7,11 @@ import { X, Search } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 
 const CUSTOMERS = [
-  { id: "c1", name: "Customer 1", logo: "/images/customer/cust_dummy_1.png" },
-  { id: "c2", name: "Customer 2", logo: "/images/customer/cust_dummy_2.png" },
-  { id: "c3", name: "Customer 3", logo: "/images/customer/cust_dummy_3.png" },
-  { id: "c4", name: "Customer 4", logo: "/images/customer/cust_dummy_4.png" },
-  { id: "c5", name: "Customer 5", logo: "/images/customer/cust_dummy_5.png" },
+  { id: "c1", name: "Customer 1", logo: "/images/customer/cust_lautan_baja_indonesia.png" },
+  { id: "c2", name: "Customer 2", logo: "/images/customer/cust_lautan_stell_indonesia.png" },
+  { id: "c3", name: "Customer 3", logo: "/images/customer/cust_banyu_laut_banten.png" },
+  // { id: "c4", name: "Customer 4", logo: "/images/customer/cust_dummy_4.png" },
+  // { id: "c5", name: "Customer 5", logo: "/images/customer/cust_dummy_5.png" },
 ];
 
 export const Clients = () => {

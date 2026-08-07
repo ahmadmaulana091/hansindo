@@ -46,7 +46,7 @@ const SOCIAL_LINKS = [
   { label: "LinkedIn", href: "https://linkedin.com", Icon: LinkedInIcon, color: "hover:bg-[#0A66C2] hover:text-white hover:border-[#0A66C2]" },
   { label: "Instagram", href: "https://instagram.com", Icon: InstagramIcon, color: "hover:bg-gradient-to-br hover:from-[#833AB4] hover:via-[#FD1D1D] hover:to-[#F77737] hover:text-white hover:border-transparent" },
   { label: "Twitter / X", href: "https://x.com", Icon: TwitterXIcon, color: "hover:bg-slate-900 hover:text-white hover:border-slate-900" },
-  { label: "WhatsApp", href: "https://wa.me/622158908888", Icon: WhatsAppIcon, color: "hover:bg-[#25D366] hover:text-white hover:border-[#25D366]" },
+  { label: "WhatsApp", href: "https://wa.me/6281949597957", Icon: WhatsAppIcon, color: "hover:bg-[#25D366] hover:text-white hover:border-[#25D366]" },
 ];
 
 export const About = () => {

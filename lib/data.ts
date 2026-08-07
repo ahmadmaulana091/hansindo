@@ -8,9 +8,9 @@ export const COMPANY_INFO = {
   descriptionParagraph2: "We are consistent in providing transportation and cargo delivery services across domestic areas, supported by a professional and experienced team, particularly in handling Export and Import cargo.",
   established: "2019",
   headquarters: "Kencana Tower, Mezzanine Floor No. 88, West Jakarta, Indonesia",
-  phone: "+62 21 *** ****",
-  whatsappNumber: "+62 812 **** ****",
-  whatsappUrl: "https://wa.me/62812********?text=Hello%20PT.%20Hansindo%20Berkat%20Jaya%20Logistik,%20I%20would%20like%20to%20consult%20about%20logistics%20services",
+  phone: "021-29601481",
+  whatsappNumber: "+62 819-4959-7957",
+  whatsappUrl: "https://wa.me/6281949597957?text=Hello%20PT.%20Hansindo%20Berkat%20Jaya%20Logistik,%20I%20would%20like%20to%20consult%20about%20logistics%20services",
   email: "info@hansindologistik.com",
   address: "Kencana Tower, Mezzanine Floor No. 88, West Jakarta, Indonesia",
 };

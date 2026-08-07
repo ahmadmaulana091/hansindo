@@ -13,6 +13,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://hansindologistik.com"),
   title: `${COMPANY_INFO.fullName} | Trusted Logistics Partner`,
   description: COMPANY_INFO.description,
   keywords: [
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
         url: "/images/content/truk_putih_lift_load.png",
         width: 1200,
         height: 630,
-        alt: "PT. Hansindo Berkat Jaya Logistik Fleet & Operations",
+        alt: "PT. Hansindo Berkat Jaya Logistik",
       },
     ],
     locale: "en_US",
