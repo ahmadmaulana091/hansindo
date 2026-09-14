@@ -20,47 +20,47 @@ const CONTACT_INFO: {
   bg: string;
   href: string | null;
 }[] = [
-  {
-    icon: MapPin,
-    label: "Office Address",
-    value: "Kencana Tower, Mezzanine Floor No. 88, West Jakarta, Indonesia",
-    color: "text-[#0B4DA2]",
-    bg: "bg-blue-50 border-blue-100",
-    href: "https://maps.google.com/?q=Kencana+Tower+West+Jakarta",
-  },
-  {
-    icon: Phone,
-    label: "Phone",
-    value: COMPANY_INFO.phone,
-    color: "text-[#F26522]",
-    bg: "bg-orange-50 border-orange-100",
-    href: `tel:${COMPANY_INFO.phone}`,
-  },
-  {
-    icon: WhatsAppIcon,
-    label: "WhatsApp",
-    value: `${COMPANY_INFO.whatsappNumber} (Chat / WhatsApp)`,
-    color: "text-[#25D366]",
-    bg: "bg-green-50 border-green-100",
-    href: COMPANY_INFO.whatsappUrl,
-  },
-  {
-    icon: Mail,
-    label: "Email",
-    value: COMPANY_INFO.email,
-    color: "text-[#F26522]",
-    bg: "bg-orange-50 border-orange-100",
-    href: `mailto:${COMPANY_INFO.email}`,
-  },
-  {
-    icon: Clock,
-    label: "Operational Hours",
-    value: ["Monday – Friday, 08.00 – 17.00 WIB", "Saturday, 08.00 – 13.00 WIB"],
-    color: "text-[#0B4DA2]",
-    bg: "bg-blue-50 border-blue-100",
-    href: null,
-  },
-];
+    {
+      icon: MapPin,
+      label: "Office Address",
+      value: "Kencana Tower, Mezzanine Floor No. 88, West Jakarta, Indonesia",
+      color: "text-[#0B4DA2]",
+      bg: "bg-blue-50 border-blue-100",
+      href: "https://maps.google.com/?q=Kencana+Tower+West+Jakarta",
+    },
+    {
+      icon: Phone,
+      label: "Phone",
+      value: COMPANY_INFO.phone,
+      color: "text-[#F26522]",
+      bg: "bg-orange-50 border-orange-100",
+      href: `tel:${COMPANY_INFO.phone}`,
+    },
+    {
+      icon: WhatsAppIcon,
+      label: "WhatsApp",
+      value: `${COMPANY_INFO.whatsappNumber} (Chat / WhatsApp)`,
+      color: "text-[#25D366]",
+      bg: "bg-green-50 border-green-100",
+      href: COMPANY_INFO.whatsappUrl,
+    },
+    {
+      icon: Mail,
+      label: "Email",
+      value: COMPANY_INFO.email,
+      color: "text-[#F26522]",
+      bg: "bg-orange-50 border-orange-100",
+      href: `mailto:${COMPANY_INFO.email}`,
+    },
+    {
+      icon: Clock,
+      label: "Operational Hours",
+      value: ["Monday – Friday, 08.00 – 17.00 WIB", "Saturday, 08.00 – 13.00 WIB"],
+      color: "text-[#0B4DA2]",
+      bg: "bg-blue-50 border-blue-100",
+      href: null,
+    },
+  ];
 
 export const Contact = () => {
   return (
