@@ -12,7 +12,14 @@ const WhatsAppIcon = () => (
   </svg>
 );
 
-const CONTACT_INFO = [
+const CONTACT_INFO: {
+  icon: React.ElementType;
+  label: string;
+  value: string | string[];
+  color: string;
+  bg: string;
+  href: string | null;
+}[] = [
   {
     icon: MapPin,
     label: "Office Address",
@@ -48,7 +55,7 @@ const CONTACT_INFO = [
   {
     icon: Clock,
     label: "Operational Hours",
-    value: "Monday – Friday, 08.00 – 17.00 WIB",
+    value: ["Monday – Friday, 08.00 – 17.00 WIB", "Saturday, 08.00 – 13.00 WIB"],
     color: "text-[#0B4DA2]",
     bg: "bg-blue-50 border-blue-100",
     href: null,
@@ -91,9 +98,24 @@ export const Contact = () => {
                 <div className={`w-11 h-11 rounded-xl ${bg} border flex items-center justify-center shrink-0`}>
                   <Icon className={`w-5 h-5 ${color}`} />
                 </div>
-                <div>
-                  <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">{label}</p>
-                  {href ? (
+                <div className="flex-1 min-w-0">
+                  <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1">{label}</p>
+                  {Array.isArray(value) ? (
+                    <div className="flex flex-col gap-1.5 mt-1">
+                      {value.map((line, idx) => {
+                        const [day, ...timeParts] = line.split(",");
+                        const time = timeParts.join(",").trim();
+                        return (
+                          <div key={idx} className="flex items-center justify-between gap-3">
+                            <span className="text-xs font-semibold text-slate-700">{day.trim()}</span>
+                            <span className="text-[11px] font-bold text-[#0B4DA2] bg-blue-50 border border-blue-100 rounded-full px-2.5 py-0.5 whitespace-nowrap">
+                              {time}
+                            </span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  ) : href ? (
                     <a
                       href={href}
                       target={href.startsWith("http") ? "_blank" : undefined}
