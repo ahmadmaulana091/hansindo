@@ -8,6 +8,13 @@ export const metadata: Metadata = {
   title: "Contact Us | Hansindo Logistik",
   description:
     "Contact PT. Hansindo Berkat Jaya Logistik for project cargo, heavy lift transport, and logistics inquiries across Indonesia.",
+  alternates: { canonical: "https://hansindologistik.com/contact" },
+  openGraph: {
+    title: "Contact Us | PT. Hansindo Berkat Jaya Logistik",
+    description: "Get in touch for project cargo, heavy lift transport, and container logistics services across Indonesia.",
+    url: "https://hansindologistik.com/contact",
+    images: [{ url: "/images/content/truk_putih_loading_cargo.png", width: 1200, height: 630, alt: "Contact Hansindo Logistik" }],
+  },
 };
 
 export default function ContactPage() {

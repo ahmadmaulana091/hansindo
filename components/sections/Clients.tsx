@@ -7,11 +7,14 @@ import { X, Search } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 
 const CUSTOMERS = [
-  { id: "c1", name: "Customer 1", logo: "/images/customer/cust_lautan_baja_indonesia.png" },
-  { id: "c2", name: "Customer 2", logo: "/images/customer/cust_lautan_stell_indonesia.png" },
-  { id: "c3", name: "Customer 3", logo: "/images/customer/cust_banyu_laut_banten.png" },
-  // { id: "c4", name: "Customer 4", logo: "/images/customer/cust_dummy_4.png" },
-  // { id: "c5", name: "Customer 5", logo: "/images/customer/cust_dummy_5.png" },
+  { id: "c1", name: "Lautan Baja Indonesia", logo: "/images/customer/cust_lautan_baja_indonesia.webp" },
+  { id: "c2", name: "Lautan Steel Indonesia", logo: "/images/customer/cust_lautan_stell_indonesia.webp" },
+  { id: "c3", name: "Banyu Laut Banten", logo: "/images/customer/cust_banyu_laut_banten.webp" },
+  { id: "c4", name: "Inter World", logo: "/images/customer/cust_inter_world.webp" },
+  { id: "c5", name: "Kaluku Transport Utama", logo: "/images/customer/cust_kaluku_transport_utama.webp" },
+  { id: "c6", name: "Pratama Galuh Perkasa", logo: "/images/customer/cust_pratama_galuh_perkasa.webp" },
+  { id: "c7", name: "Putra Baja Deli", logo: "/images/customer/cust_putra_baja_deli.webp" },
+  { id: "c8", name: "Samudera Steel Indonesia", logo: "/images/customer/cust_samudera_steel_indonesia.webp" },
 ];
 
 export const Clients = () => {

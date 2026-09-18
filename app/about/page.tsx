@@ -10,6 +10,13 @@ export const metadata: Metadata = {
   title: "About Us | Hansindo Logistik",
   description:
     "PT. Hansindo Berkat Jaya Logistik — a trusted logistics service provider covering all of Indonesia since 2019. Learn about our vision, mission, and professional team.",
+  alternates: { canonical: "https://hansindologistik.com/about" },
+  openGraph: {
+    title: "About Us | PT. Hansindo Berkat Jaya Logistik",
+    description: "Trusted logistics partner since 2019. Learn about our vision, mission, HANSINDO values, and professional team.",
+    url: "https://hansindologistik.com/about",
+    images: [{ url: "/images/content/truk_putih_lift_load.png", width: 1200, height: 630, alt: "Hansindo Logistik Fleet" }],
+  },
 };
 
 export default function AboutPage() {

@@ -24,7 +24,16 @@ export const metadata: Metadata = {
     "Export Import Cargo",
     "Hansindo Logistik",
     "Hansindo Berkat Jaya Logistik",
+    "Jasa Logistik Indonesia",
+    "Pengiriman Kargo",
+    "Transportasi Proyek",
+    "Heavy Lift Cargo Jakarta",
+    "Freight Forwarding Indonesia",
+    "PT Hansindo",
   ],
+  alternates: {
+    canonical: "https://hansindologistik.com",
+  },
   authors: [{ name: COMPANY_INFO.fullName }],
   openGraph: {
     title: `${COMPANY_INFO.fullName} - Trusted Logistics Provider`,
@@ -56,6 +65,9 @@ export const metadata: Metadata = {
     icon: "/logo.svg",
     shortcut: "/logo.svg",
     apple: "/logo.svg",
+  },
+  verification: {
+    google: "47EBS8PNB5SvpyATxe0zDsXke08Dv5l69ndE0Kgctjc",
   },
 };
 

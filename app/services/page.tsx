@@ -9,6 +9,13 @@ export const metadata: Metadata = {
   title: "Our Services | Hansindo Logistik",
   description:
     "Explore Hansindo Logistik's professional services — Project Cargo, Heavy Lift Load, and domestic & international freight across Indonesia.",
+  alternates: { canonical: "https://hansindologistik.com/services" },
+  openGraph: {
+    title: "Our Services | PT. Hansindo Berkat Jaya Logistik",
+    description: "Project Cargo, Heavy Lift Transport, and Container Logistics services across Indonesia.",
+    url: "https://hansindologistik.com/services",
+    images: [{ url: "/images/content/truk_putih_loading_cargo.png", width: 1200, height: 630, alt: "Hansindo Logistik Services" }],
+  },
 };
 
 export default function ServicesPage() {

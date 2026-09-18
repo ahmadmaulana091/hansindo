@@ -9,6 +9,13 @@ export const metadata: Metadata = {
   title: "Our Customers | Hansindo Logistik",
   description:
     "Discover the companies that trust Hansindo Logistik for professional project cargo and heavy lift transport services across Indonesia.",
+  alternates: { canonical: "https://hansindologistik.com/customers" },
+  openGraph: {
+    title: "Our Customers | PT. Hansindo Berkat Jaya Logistik",
+    description: "Leading companies across Indonesia trust Hansindo Logistik for safe and professional cargo delivery.",
+    url: "https://hansindologistik.com/customers",
+    images: [{ url: "/images/content/truk_putih_loading_cargo.png", width: 1200, height: 630, alt: "Hansindo Logistik Customers" }],
+  },
 };
 
 export default function CustomersPage() {

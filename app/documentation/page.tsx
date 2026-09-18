@@ -8,6 +8,13 @@ export const metadata: Metadata = {
   title: "Documentation | Hansindo Logistik",
   description:
     "Work activity and project documentation from PT. Hansindo Berkat Jaya Logistik — logistics operations, cargo handling, and field activity photos.",
+  alternates: { canonical: "https://hansindologistik.com/documentation" },
+  openGraph: {
+    title: "Documentation | PT. Hansindo Berkat Jaya Logistik",
+    description: "Project cargo and logistics operation documentation — field activity photos from Hansindo Logistik.",
+    url: "https://hansindologistik.com/documentation",
+    images: [{ url: "/images/content/truk_putih_loading_cargo.png", width: 1200, height: 630, alt: "Hansindo Logistik Documentation" }],
+  },
 };
 
 export default function DocumentationPage() {

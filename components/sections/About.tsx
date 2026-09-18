@@ -221,7 +221,7 @@ export const About = () => {
                       <h4 className="font-bold text-slate-900 text-sm pt-1.5">Company Vision</h4>
                     </div>
                     <p className="text-slate-600 text-sm leading-relaxed">
-                      Estabilishing Hansindo Logistik as Tour Reliable Choice For Managing Export and Import Shipments Throughout Indonesia.
+                      To become a trusted and professional transportation and logistics partner, delivering safe, reliable, and timely solutions while creating sustainable long-term value.
                     </p>
                   </motion.div>
                 )}
@@ -233,17 +233,23 @@ export const About = () => {
                       </div>
                       <h4 className="font-bold text-slate-900 text-sm pt-1.5">Company Mission</h4>
                     </div>
-                    <ul className="space-y-2.5">
+                    <p className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3">Trust · Safety · Service · Growth</p>
+                    <ul className="space-y-2.5 mb-4">
                       {[
-                        "Providing Professional Services With an Experienced Team Specialized in Cargo Logistics Management.",
-                        "Delivering Significant Benefits For Employee Welfare, Company Growth, and Creating a Positive Impact on The Environment and The Surrounding Community.",
+                        { label: "Trust", desc: "Build lasting relationships through integrity, transparency, and accountability." },
+                        { label: "Safety", desc: "Make safety our highest priority in every journey and operation." },
+                        { label: "Service", desc: "Deliver reliable, responsive, and timely transportation and logistics solutions." },
+                        { label: "Growth", desc: "Continuously develop our people, fleet, technology, and operational systems for sustainable growth." },
                       ].map((item, i) => (
                         <li key={i} className="flex items-start gap-2.5 text-sm text-slate-600">
                           <CheckCircle2 className="w-4 h-4 text-[#F26522] shrink-0 mt-0.5" />
-                          {item}
+                          <span><strong className="text-slate-800">{item.label}</strong> — {item.desc}</span>
                         </li>
                       ))}
                     </ul>
+                    <div className="bg-[#0B4DA2]/5 border border-[#0B4DA2]/20 rounded-xl px-4 py-3">
+                      <p className="text-xs text-[#0B4DA2] font-semibold italic text-center">&ldquo;We don&apos;t just move cargo. We move trust.&rdquo;</p>
+                    </div>
                   </motion.div>
                 )}
                 {activeTab === "values" && (
@@ -252,18 +258,25 @@ export const About = () => {
                       <div className="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center shrink-0">
                         <Award className="w-4 h-4 text-[#0B4DA2]" />
                       </div>
-                      <h4 className="font-bold text-slate-900 text-sm pt-1.5">Company Values</h4>
+                      <h4 className="font-bold text-slate-900 text-sm pt-1.5">Our Values — HANSINDO</h4>
                     </div>
-                    <div className="grid grid-cols-2 gap-2">
+                    <div className="space-y-2 max-h-64 overflow-y-auto pr-1">
                       {[
-                        { label: "Service Quality", color: "bg-orange-500" },
-                        { label: "Professional Team", color: "bg-blue-700" },
-                        { label: "Export/Import Focus", color: "bg-blue-700" },
-                        { label: "Client Trust", color: "bg-orange-500" },
+                        { letter: "H", title: "Honesty", desc: "Being honest and transparent in everything we do." },
+                        { letter: "A", title: "Accountability", desc: "Taking responsibility for our work, actions, and results." },
+                        { letter: "N", title: "Networking", desc: "Building strong and positive relationships with customers, partners, and colleagues." },
+                        { letter: "S", title: "Service Excellence", desc: "Providing the best possible service to our customers and supporting our team with excellence." },
+                        { letter: "I", title: "Integrity", desc: "Doing the right thing and staying true to our principles." },
+                        { letter: "N", title: "Never Stop Growing", desc: "Continuously learning, improving, and developing ourselves." },
+                        { letter: "D", title: "Discipline", desc: "Being disciplined with our time, rules, responsibilities, and work." },
+                        { letter: "O", title: "Ownership", desc: "Taking responsibility, showing care, and treating the company's success as our own." },
                       ].map((v, i) => (
-                        <div key={i} className="flex items-center gap-2 bg-white border border-slate-200 rounded-lg p-2.5">
-                          <span className={`w-2 h-2 rounded-full ${v.color} shrink-0`} />
-                          <span className="text-xs font-semibold text-slate-700">{v.label}</span>
+                        <div key={i} className="flex items-start gap-3 bg-white border border-slate-200 rounded-xl p-2.5 hover:border-[#0B4DA2]/30 transition-colors">
+                          <span className="w-7 h-7 rounded-lg bg-[#F26522] text-white text-xs font-extrabold flex items-center justify-center shrink-0">{v.letter}</span>
+                          <div>
+                            <p className="text-xs font-bold text-slate-800">{v.title}</p>
+                            <p className="text-xs text-slate-500 leading-relaxed">{v.desc}</p>
+                          </div>
                         </div>
                       ))}
                     </div>
