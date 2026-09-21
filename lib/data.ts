@@ -32,7 +32,7 @@ export const SERVICES_DATA: ServiceItem[] = [
         caption: "",
       },
       {
-        src: "/images/content/cargo_loading_plat.jpeg",
+        src: "/images/content/cargo_loading_plat.webp",
         alt: "Heavy Steel Plate Loading",
         caption: "",
       },
@@ -77,7 +77,7 @@ export const SERVICES_DATA: ServiceItem[] = [
         caption: "",
       },
       {
-        src: "/images/content/container_jalan.png",
+        src: "/images/content/container_loading_2.webp",
         alt: "Container Truck on Highway",
         caption: "",
       },
