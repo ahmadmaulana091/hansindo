@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: `${COMPANY_INFO.fullName} - Trusted Logistics Provider`,
     description: COMPANY_INFO.description,
     url: "https://hansindologistik.com",
-    siteName: COMPANY_INFO.name,
+    siteName: COMPANY_INFO.fullName,
     images: [
       {
         url: "/images/content/truk_putih_lift_load.png",
@@ -76,10 +76,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const jsonLd = {
+  // WebSite schema → dipakai Google untuk menampilkan nama site di hasil pencarian
+  const jsonLdWebsite = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: COMPANY_INFO.fullName,
+    alternateName: COMPANY_INFO.name,
+    url: "https://hansindologistik.com",
+  };
+
+  // Corporation schema → untuk rich results (info perusahaan)
+  const jsonLdCorporation = {
     "@context": "https://schema.org",
     "@type": "Corporation",
-    name: COMPANY_INFO.name,
+    name: COMPANY_INFO.fullName,
     legalName: COMPANY_INFO.fullName,
     url: "https://hansindologistik.com",
     logo: "https://hansindologistik.com/logo.png",
@@ -99,7 +109,11 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdWebsite) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdCorporation) }}
         />
       </head>
       <body className={`${jakarta.variable} font-sans antialiased bg-white text-slate-900 selection:bg-secondary selection:text-white`}>
