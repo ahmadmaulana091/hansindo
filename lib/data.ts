@@ -77,7 +77,7 @@ export const SERVICES_DATA: ServiceItem[] = [
         caption: "",
       },
       {
-        src: "/images/content/container_loading_2.webp",
+        src: "/images/content/container_load.webp",
         alt: "Container Truck on Highway",
         caption: "",
       },
